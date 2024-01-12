@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 import string
-print(*getattr(string, 'ascii_uppercase'), sep='')
+print(ascii_uppercase)
