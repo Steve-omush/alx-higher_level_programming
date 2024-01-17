@@ -5,7 +5,8 @@
 
 class Square:
     """Square class with a private size attribute."""
-    def __ini__(self, size=0):
+
+    def __init__(self, size=0):
         """Initializes a new Square Instance.
 
         Args:
