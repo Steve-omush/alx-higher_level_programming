@@ -1,14 +1,18 @@
 #!/usr/bin/python3
 
+"""Define class Square."""
+
+
 class Square:
     """Square class with private size attribute and method"""
+
     def __init__(self, size=0):
         """Initializes a new Square instance.
 
         Args:
             size (number, optional): The size of the square. Defaults to 0.
         """
-        self.size = size  # Using the setter to perform validation
+        self.size = size
 
     @property
     def size(self):
@@ -26,8 +30,8 @@ class Square:
             TypeError: If the value is not a number.
             ValueError: If the value is less than 0.
         """
-        if not isinstance(value, (int, float)):
-            raise TypeError("size must be a number")
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
