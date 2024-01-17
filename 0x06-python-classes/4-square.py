@@ -4,7 +4,8 @@
 
 
 class Square:
-    """Square class with private size attribute, getter, setter, and area method."""
+    """Square class with private ttribute, getter, setter, area method."""
+
     def __init__(self, size=0):
         """Initializes a new Square instance.
 
@@ -12,6 +13,7 @@ class Square:
         size (int): Size of square.
         """
         self.size = size
+
     @property
     def size(self):
         """Getter method to retrieve the size."""
