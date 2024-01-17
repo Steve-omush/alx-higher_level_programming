@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Define a MagicClass exactly matching bytecode."""
+
 import math
 
 class MagicClass:
