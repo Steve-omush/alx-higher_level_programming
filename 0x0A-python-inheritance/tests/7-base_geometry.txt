@@ -1,0 +1,13 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> BaseGeometry.integer_validator("idk", 0)
+Traceback (most recent call last):
+ValueError: idk must be greater than 0
+
+>>> BaseGeometry.integer_validator("Time", -32)
+Traceback (most recent call last):
+ValueError: Time must be greater than 0
+
+>>> BaseGeometry.integer_validator("cat", "Maiq")
+Traceback (most recent call last):
+TypeError: cat must be an integer
