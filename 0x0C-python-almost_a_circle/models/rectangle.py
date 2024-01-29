@@ -78,3 +78,9 @@ class Rectangle(Base):
         """Draws # according to coordinates."""
         for _ in range(self.__height):
             print('#' * self.__width)
+
+    def __str__(self):
+        """Override the default __str__ method."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
