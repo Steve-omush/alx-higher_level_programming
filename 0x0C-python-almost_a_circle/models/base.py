@@ -41,3 +41,10 @@ class Base:
 
         with open(filename, 'w') as file:
             file.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Converts String to Dictionaries."""
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
