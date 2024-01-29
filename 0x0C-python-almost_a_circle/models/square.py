@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+"""Defines Class Square."""
+from models.rectangle import Rectangle
+
+
+class Square(Rectangle):
+    """Inherits from Rectangle."""
+    def __init__(self, size, x=0, y=0, id=None):
+        """Creates an instance of Square Class."""
+        super().__init__(size, size, x, y, id)
+
+    @property
+    def size(self):
+        """Getter for size(width and height)."""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Setter for size."""
+        self.width = value
+        self.height = value
+
+    def __str__(self):
+        return "[Square] ({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.width)
